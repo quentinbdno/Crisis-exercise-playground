@@ -18,15 +18,15 @@ router.register("users", UserViewSet)
 router.register("roles", RoleViewSet)
 router.register("permissions", PermissionViewSet)
 router.register("crisis-cells", CrisisCellViewSet)
-router.register("scenarios", ScenarioViewSet)
+router.register("scenarios", ScenarioViewSet, basename="scenario")
 router.register("stimuli", StimulusViewSet)
 router.register("exercises", ExerciseViewSet)
 router.register("channels", ChannelViewSet)
-router.register("messages", MessageViewSet)
+router.register("messages", MessageViewSet, basename="message")
 router.register("attachments", AttachmentViewSet)
 router.register("ai-agents", AIAgentViewSet)
 router.register("llm-connectors", LLMConnectorViewSet)
-router.register("audit-logs", AuditLogViewSet)
+router.register("audit-logs", AuditLogViewSet, basename="audit-log")
 
 urlpatterns = [
     path("admin/", admin.site.urls),

@@ -6,6 +6,15 @@
   color-scheme: dark;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --app-bg: #090e16;
+  --app-card: #0f1724;
+  --app-card-soft: #141e2d;
+  --app-border: #263247;
+  --app-muted: #94a3b8;
+  --app-primary: #3b82f6;
+  --app-success: #22c55e;
+  --app-warning: #f59e0b;
+  --app-danger: #ef4444;
 }
 
 :root.light {
@@ -29,4 +38,29 @@ textarea {
 
 .focus-ring {
   @apply focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 focus:ring-offset-surface-950;
+}
+
+.cyber-grid {
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.status-dot {
+  @apply h-2 w-2 rounded-full;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1420;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
 }

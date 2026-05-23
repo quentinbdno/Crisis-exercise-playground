@@ -8,18 +8,21 @@ module.exports = {
         surface: {
           50: '#f8fafc',
           100: '#eef2f7',
+          200: '#dbe3ef',
+          700: '#243044',
           800: '#18212f',
           900: '#0d1420',
-          950: '#080d14'
+          950: '#090e16'
         },
         accent: {
-          500: '#2f80ed',
-          600: '#1f6fd2'
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb'
         },
         signal: {
-          green: '#2fb344',
-          amber: '#f59f00',
-          red: '#e03131'
+          green: '#22c55e',
+          amber: '#f59e0b',
+          red: '#ef4444'
         }
       },
       boxShadow: {
